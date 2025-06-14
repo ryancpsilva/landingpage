@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contadora | Denise Ribeiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link type="image/png" sizes="16x16" rel="icon" href="img/icons8-contador-16.png">
+    <style>
+        .btn-anim {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .btn-anim:hover {
+            transform: scale(1.025);
+        }
+       .underline-anim {
+            position: relative;
+            display: inline-block;
+        } 
+        .underline-anim::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: #3b82f6; /* azul-500 */
+            transition: width 0.3s ease;
+        }
+
+        .underline-anim:hover::after {
+            width: 100%;
+        }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-gray-800 shadow z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="">
+            <div class="text-2xl font-bold text-blue-400">Contadora Denise Ribeiro</div>
+        </a>
+        <nav class="space-x-6 hidden md:flex">
+          <a href="#sobre" class="hover:text-blue-400 btn-anim underline-anim">Sobre</a>
+          <a href="#servicos" class="hover:text-blue-400 btn-anim underline-anim">Serviços</a>
+          <a href="#depoimentos" class="hover:text-blue-400 btn-anim underline-anim">Depoimentos</a>
+        </nav>
+        <a href="https://wa.me/5521969435857?text=Olá,%20gostaria%20de%20mais%20informações" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 btn-anim">Agende uma Consulta</a>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section class="bg-gray-800 py-20">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-col items-center gap-8">
+          <img src="img/denisepicture.jpg" alt="Foto da contadora" class="rounded-xl shadow-lg" />
+          <div class="md:w-1/2">
+            <h1 class="text-4xl font-bold mb-4 text-blue-300">Tenha sua Contabilidade em Dia com Quem Entende do Assunto</h1>
+            <p class="text-lg mb-6">Especialista em MEI, abertura de empresas e planejamento tributário.</p>
+            <div class="space-x-4 flex flex-wrap gap-6">
+              <a href="https://wa.me/5521969435857?text=Olá,%20gostaria%20de%20mais%20informações" target="_blank" class="bg-green-500 text-white px-3 py-2 rounded hover:bg-green-700 btn-anim">Fale comigo no WhatsApp</a>
+              <a href="#servicos" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 btn-anim">Conheça os serviços</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Mim -->
+      <section id="sobre" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+          <h2 class="text-3xl font-bold mb-6 text-blue-300">Sobre Mim</h2>
+          <img src="img/contador-stock.jpeg" class="rounded-xl mx-auto mb-4 w-full max-w-sm" />
+          <p class="text-lg">Sou Denise Ribeiro, contadora com [X] anos de experiência atendendo empreendedores, autônomos e pequenas empresas. Minha missão é simplificar sua vida financeira com confiança e clareza.</p>
+        </div>
+      </section>
+
+      <!-- Serviços -->
+      <section id="servicos" class="bg-gray-800 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-10 text-center text-blue-300">Serviços Oferecidos</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-700 p-6 rounded-xl shadow text-center btn-anim">
+              <h3 class="text-xl font-semibold mb-2 text-blue-200">Abertura de Empresas</h3>
+              <p>Todo suporte necessário para você começar do jeito certo.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow text-center btn-anim ">
+              <h3 class="text-xl font-semibold mb-2 text-blue-200">Declaração de Imposto de Renda</h3>
+              <p>Fique em dia com o Leão de forma simples e segura.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow text-center btn-anim">
+              <h3 class="text-xl font-semibold mb-2 text-blue-200">MEI e ME</h3>
+              <p>Regularização e acompanhamento completo para microempresários.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow text-center btn-anim">
+              <h3 class="text-xl font-semibold mb-2 text-blue-200">Folha de Pagamento</h3>
+              <p>Gestão eficiente e legalizada da sua equipe.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow text-center btn-anim">
+              <h3 class="text-xl font-semibold mb-2 text-blue-200">Consultoria Tributária</h3>
+              <p>Planejamento estratégico para reduzir custos com impostos.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow text-center btn-anim">
+              <h3 class="text-xl font-semibold mb-2 text-blue-200">Escrituração Contábil</h3>
+              <p>Organização completa das suas movimentações financeiras.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section id="depoimentos" class="py-20">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+          <h2 class="text-3xl font-bold mb-10 text-blue-300">O que dizem meus clientes</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-700 p-6 rounded-xl shadow btn-anim">
+              <p class="italic">“Excelente profissional, me ajudou muito na abertura da minha empresa!”</p>
+              <p class="mt-4 font-semibold">— João Silva</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow btn-anim">
+              <p class="italic">“Atendimento rápido, honesto e com muita clareza. Recomendo!”</p>
+              <p class="mt-4 font-semibold">— Ana Souza</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow btn-anim">
+              <p class="italic">“Me orientou desde o início, fez toda a contabilidade da minha loja.”</p>
+              <p class="mt-4 font-semibold">— Carla Mendes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 border-t border-gray-700 py-6 text-center text-sm text-gray-400">
+      <p>&copy; 2025 Contadora Denise Ribeiro. Todos os direitos reservados.</p>
+      <div class="mt-4 max-w-3xl mx-auto flex gap-8 justify-center items-center">
+        <a href="https://wa.me/5521969435857?text=Olá,%20gostaria%20de%20mais%20informações" class="w-10"> <img src="img/icons8-whatsapp-50.png" alt="WhatsApp logo"></a>
+        <a href="https://www.instagram.com/deniseribeiro.contadora/" target="_blank" class="w-10"><img src="img/icons8-instagram-50.png" alt="instagram logo"></a>        
+        <a href="#" class="w-10"><img src="img/icons8-linkedin-50.png" alt="Linkedin logo"></a>
+      </div>
+    </footer>
+  </body>
+</html>
