@@ -6,50 +6,23 @@
     <title>Contadora | Denise Ribeiro</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link type="image/png" sizes="16x16" rel="icon" href="img/icons8-contador-16.png">
-    <style>
-        .btn-anim {
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-        .btn-anim:hover {
-            transform: scale(1.025);
-        }
-       .underline-anim {
-            position: relative;
-            display: inline-block;
-        } 
-        .underline-anim::after {
-            content: '';
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            left: 0;
-            bottom: 0;
-            background-color: #3b82f6;
-            transition: width 0.3s ease;
-        }
-
-        .underline-anim:hover::after {
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-gray-900 text-gray-100">
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-gray-800 shadow z-50">
       <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="">
-            <div class="text-2xl font-bold text-blue-400">Contadora Denise Ribeiro</div>
-        </a>
+        <a href=""><div class="text-2xl font-bold text-blue-400">Contadora Denise Ribeiro</div></a>
         <nav class="space-x-6 hidden md:flex">
           <a href="#sobre" class="hover:text-blue-400 btn-anim underline-anim">Sobre</a>
           <a href="#servicos" class="hover:text-blue-400 btn-anim underline-anim">Serviços</a>
           <a href="#depoimentos" class="hover:text-blue-400 btn-anim underline-anim">Depoimentos</a>
           <a href="#mei" class="hover:text-blue-400 btn-anim underline-anim">MEI</a>
+          <a href="#contato" class="hover:text-blue-400 btn-anim underline-anim">Contato</a>
         </nav>
         <a href="https://wa.me/5521969435857?text=Olá,%20gostaria%20de%20mais%20informações" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 btn-anim">Agende uma Consulta</a>
       </div>
     </header>
-
     <main class="pt-24">
       <!-- Hero Section -->
       <section class="bg-gray-800 py-20">
@@ -65,7 +38,6 @@
           </div>
         </div>
       </section>
-
       <!-- Sobre Mim -->
       <section id="sobre" class="py-20">
         <div class="max-w-4xl mx-auto px-4 text-center">
@@ -74,7 +46,6 @@
           <p class="text-lg">Sou Denise Ribeiro, contadora com mais de 20 anos de experiência atendendo empreendedores, autônomos e pequenas empresas. Minha missão é simplificar sua vida financeira com confiança e clareza.</p>
         </div>
       </section>
-
       <!-- Serviços -->
       <section id="servicos" class="bg-gray-800 py-20">
         <div class="max-w-7xl mx-auto px-4">
@@ -107,7 +78,6 @@
           </div>
         </div>
       </section>
-
       <!-- MEI -->
       <section id="mei" class="py-20">
         <div class="max-w-7xl mx-auto px-4">
@@ -148,9 +118,6 @@
           </div>
         </div>
       </section>
-
-
-
       <!-- Depoimentos -->
       <section id="depoimentos" class="py-20">
         <div class="max-w-5xl mx-auto px-4 text-center">
@@ -169,6 +136,20 @@
               <p class="mt-4 font-semibold">— Carla Mendes</p>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Contato -->
+      <section id="contato" class="bg-gray-800 py-20">
+        <div class="max-w-3xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8 text-blue-300">Entre em Contato</h2>
+          <form action="https://formsubmit.co/deniseribeiro.contadora@gmail.com" method="POST" class="bg-gray-700 p-6 rounded-xl shadow space-y-4">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="nome" placeholder="Seu nome" required class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" />
+            <input type="email" name="email" placeholder="Seu e-mail" required class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" />
+            <input type="tel" name="telefone" placeholder="Seu telefone" class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" />
+            <textarea name="mensagem" placeholder="Mensagem" rows="4" required class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded"></textarea>
+            <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded hover:bg-blue-600 btn-anim">Solicitar Atendimento</button>
+          </form>
         </div>
       </section>
     <!-- Rodapé -->

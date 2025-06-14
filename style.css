@@ -1,0 +1,24 @@
+.btn-anim {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btn-anim:hover {
+    transform: scale(1.025);
+}
+.underline-anim {
+    position: relative;
+    display: inline-block;
+} 
+.underline-anim::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.underline-anim:hover::after {
+    width: 100%;
+}
